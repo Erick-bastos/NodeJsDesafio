@@ -1,7 +1,8 @@
-const repository = require ('../Repositories/transactionRepository')
+const Repository = require ('../Repositories/transactionRepository')
 
-function execute (body) {
-    repository.create(body)
+async function execute (body) {
+    const repository = new Repository() 
+    await repository.create(body)
 }
 
 module.exports = {execute}

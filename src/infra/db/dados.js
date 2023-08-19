@@ -1,3 +1,3 @@
-const transaction = []
+const transactions = []
 
-module.exports = transaction
+module.exports = {transactions}
